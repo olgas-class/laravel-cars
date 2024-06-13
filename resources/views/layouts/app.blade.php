@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <h2>Ciao Omar!</h2>
+  @include('partials.header')
   <main>
     @yield('content')
   </main>
