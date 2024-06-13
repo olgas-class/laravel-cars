@@ -2,9 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Car;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
+
 
 class CarsTableSeeder extends Seeder
 {
@@ -14,7 +16,9 @@ class CarsTableSeeder extends Seeder
     public function run(Faker $faker): void
     {
         for($i = 0; $i < 10; $i++) {
-            
+            $car = new Car();
+            $car->title = $faker->sentence();
+            $car->save();
         }
     }
 }
