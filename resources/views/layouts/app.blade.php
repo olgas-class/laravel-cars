@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <h2>Ciao Omar!</h2>
   <main>
     @yield('content')
   </main>
